@@ -6,7 +6,7 @@ organization-wide efficiency.
 
 ## Features
 
-### Admin
+### **Admin**
 * Profile Management: Admin can manage and edit their own profile, and reset passwords.
 * Student Enrollment: Control the registration and enrollment of students in various courses.
 * Faculty & Librarian Management: Admin can add and manage faculty and librarian profiles.
@@ -16,7 +16,7 @@ organization-wide efficiency.
 * Leave Requests: View and manage leave applications submitted by students.
 * Logout: Securely log out of the system.
 
-### Faculty
+### **Faculty**
 * Profile Management: Faculty members can manage and edit their profiles, and reset passwords.
 * Class Schedule: View the schedule of their classes.
 * Student Management: View student lists, mark attendance, and upload marks.
@@ -26,7 +26,7 @@ organization-wide efficiency.
 * Library Management: View the available books in the library.
 * Logout: Securely log out of the system.
 
-### Student
+### **Student**
 * Profile Management: Students can view and edit their profiles, and reset their passwords.
 * Notice Board: View notices posted by faculties and Admin.
 * Results: See their results uploaded by the faculty.
@@ -36,7 +36,7 @@ organization-wide efficiency.
 * Library: Request books from the library, view the list of books, and check the history of books issued.
 * Logout: Securely log out of the system.
 
-### Librarian
+### **Librarian**
 * Profile Management: Librarians can view, edit, and reset their profiles.
 * Notices: View notices posted by Admin.
 * Book Management: Add new books to the library and view the list of available books.
