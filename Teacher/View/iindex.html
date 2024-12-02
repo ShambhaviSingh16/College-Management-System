@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LOGIN</title>
+  <link href="../../Home/Resources/bu logo..png" rel="icon">
+  <link rel="stylesheet" media="screen" href="style.css">
+  <style>
+    /* CSS Styles */
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    .header-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: #fff;
+    }
+
+    .logo img {
+      height: 59px;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    /* Container */
+
+    #login-form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f5f5f5;
+      border-radius: 3px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    legend {
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #error_message {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding: 0;
+      background: #de0404;
+      text-align: center;
+      font-size: 18px;
+      transition: all 0.5s ease;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    table td {
+      padding: 5px;
+    }
+
+    .form-actions {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .form-actions a {
+      color: #666;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-actions button:hover {
+      background-color: #555;
+    }
+
+    div.align-center {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    div.align-center a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    .footer-container {
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* particles.js container */
+    #particles-js {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      background-image: url('');
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+  <script>
+    function validation() {
+      var id = document.getElementById("id").value;
+      var password = document.getElementById("password").value;
+      var error_message = document.getElementById("error_message");
+
+      // Reset error message
+      error_message.innerHTML = "";
+
+      // Validate ID
+      if (id.trim() === "") {
+        error_message.innerHTML = "ID is required";
+        return false;
+      }
+
+      // Validate Password
+      if (password.trim() === "") {
+        error_message.innerHTML = "Password is required";
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+
+
+
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+  <header class="header-container">
+    <div class="logo">
+    </div>
+    <nav class="menu">
+      <a href="../../TOCS/index.html">Back</a>
+    </nav>
+  </header>
+
+  <div id="container">
+    <div id="login-form">
+
+      <form id="inform" action="../Controller/LogCheck.php" onsubmit="return validation()" method="post">
+        <fieldset>
+          <legend>TEACHER LOGIN</legend>
+          <div id="error_message"></div>
+          <table>
+            <tr>
+              <td>ID</td>
+              <td>: <input type="text" id="id" name="ID" value=""></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td>: <input type="password" id="password" name="password" value=""></td>
+            </tr>
+          </table>
+          <input type="checkbox" name="" value=""> Remember Me <br>
+          <div class="form-actions">
+            <a href="ForgotPassword.php">FORGOT PASSWORD?</a>
+            <button type="submit" id="submit" name="submit">LOGIN</button>
+          </div>
+        </fieldset>
+      </form>
+      <div align="center">
+        <a href="Registration.php">SIGN UP</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- scripts -->
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
