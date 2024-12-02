@@ -74,7 +74,6 @@ organization-wide efficiency.
 1. **Clone the Repository:**
 
 ```bash
-Copy code
 git clone https://github.com/your-username/college-management-system.git
 ```
 2. **Set Up MySQL Database:**
